@@ -13,10 +13,11 @@
 
   <div class="container">
     <div class="row">
-      <div class="col-md-12 jumbotron text-center">
-        <h1>Belly Button Biodiversity Dashboard</h1>
-        <p>Use the interactive charts below to explore the dataset</p>
-        <p>All charts are dynamic and dependent upon the Subject ID Selection</p>
+      <div class="col-md-12 jumbotron text-center" style="background: url(./images/viruses-bacteria-fungi-s.jpg) no-repeat center fixed; -webkit-background-size: cover; -moz-background-size: cover;
+      -o-background-size: cover; background-size: cover;">
+        <h1 style= "color:azure;"> Belly Button Biodiversity Dashboard</h1>
+        <p style= "color:azure;"> Use the interactive charts below to explore the dataset</p>
+        <p style= "color: azure;"> All charts are dynamic and dependent upon the Subject ID Selection</p>
       </div>
     </div>
     <div class="row">
@@ -33,28 +34,26 @@
           <div id="sample-metadata" class="panel-body"></div>
         </div>
       </div>
-      <div class="col-md-10">
-        <div id="bubble"></div>
-        <p>This bubble chart will show the amount and kind of bacteria from each subjects sample.
-      </div>
-      <div class="col-md-12">
+      <div class="col-md-5">
         <div id="bar"></div>
-        <p>This bar chart will list the Top 10 types of bacteria found in the subjects belly button.   If there are less than 10 types found it will list all available.
-          All results will be shown in descending order.
-        </p>
+        
+      </div>
+      <div class="col-md-5">
+        <div id="gauge"></div>
+      
       </div>
     </div>
     <div class="row">
       <div class="col-md-12">
-        <div id="gauge"></div>
-        <p>This chart will show how many times somone washes their belly button on a weekly basis.   The specific number is shown both graphically within the gauge as well as numerically in the middle.</p>
+        <div id="bubble"></div>
+     
       </div>
     </div>
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-  <script src="plots.js"></script>
+  <script src="charts.js"></script>
 
 </body>
 
