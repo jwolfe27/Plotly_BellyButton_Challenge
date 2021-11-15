@@ -107,7 +107,8 @@ function init() {
         mode: "markers",
          marker: {
            size: bubbleValues,
-           color: ids
+           color: ids,
+           colorscale: 'Portland'
             
          }
       }];
@@ -148,7 +149,7 @@ function init() {
         gauge: {
           axis: {range: [null,10], dtick: "2"},
   
-          bar: {color: "ff0000"},
+          bar: {color: "red"},
           steps:[
             {range: [0, 2], color: "00ccff"},
             {range: [2, 4], color: "0099ff"},
